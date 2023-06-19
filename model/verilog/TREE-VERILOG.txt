@@ -1,7 +1,11 @@
 code
 ├── architecture
-│   └── pu
-│       └── ntm_pu.sv
+│   ├── mpsoc
+│   │   └── ntm_mpsoc.sv
+│   ├── pu
+│   │   └── ntm_pu.sv
+│   └── soc
+│       └── ntm_soc.sv
 ├── arithmetic
 │   ├── fixed
 │   │   ├── matrix
@@ -155,9 +159,7 @@ code
 │   │   │   ├── model_tensor_inverse.sv
 │   │   │   ├── model_tensor_matrix_convolution.sv
 │   │   │   ├── model_tensor_matrix_product.sv
-│   │   │   ├── model_tensor_multiplication.sv
 │   │   │   ├── model_tensor_product.sv
-│   │   │   ├── model_tensor_summation.sv
 │   │   │   └── model_tensor_transpose.sv
 │   │   └── vector
 │   │       ├── model_dot_product.sv
@@ -217,7 +219,6 @@ code
 │           └── model_vector_tanh_function.sv
 ├── pkg
 │   ├── model_arithmetic_pkg.sv
-│   ├── model_dnc_core_pkg.sv
 │   ├── model_fnn_controller_pkg.sv
 │   ├── model_lstm_controller_pkg.sv
 │   ├── model_math_pkg.sv
@@ -246,4 +247,4 @@ code
         ├── model_input_trainer.sv
         └── model_output_trainer.sv
 
-63 directories, 183 files
+65 directories, 182 files
