@@ -46,7 +46,7 @@ all: build simulate
 
 build:
 	if [ ! -e work ]; then vlib work; fi
-.fom -2008 -f system.f
+	vcom -2008 -f system.f
 
 simulate:
 	vsim -c -do run.do work.ntm_testbench
