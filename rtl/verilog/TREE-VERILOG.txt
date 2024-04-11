@@ -197,19 +197,17 @@ code
 │   │   │   ├── accelerator_memory_matrix.sv
 │   │   │   ├── accelerator_memory_retention_vector.sv
 │   │   │   ├── accelerator_precedence_weighting.sv
-│   │   │   ├── accelerator_read_content_weighting.sv
-│   │   │   ├── accelerator_read_vectors.sv
-│   │   │   ├── accelerator_read_weighting.sv
 │   │   │   ├── accelerator_sort_vector.sv
 │   │   │   ├── accelerator_temporal_link_matrix.sv
-│   │   │   ├── accelerator_usage_vector.sv
-│   │   │   ├── accelerator_write_content_weighting.sv
-│   │   │   └── accelerator_write_weighting.sv
+│   │   │   └── accelerator_usage_vector.sv
 │   │   ├── read_heads
 │   │   │   ├── accelerator_free_gates.sv
+│   │   │   ├── accelerator_read_content_weighting.sv
 │   │   │   ├── accelerator_read_keys.sv
 │   │   │   ├── accelerator_read_modes.sv
-│   │   │   └── accelerator_read_strengths.sv
+│   │   │   ├── accelerator_read_strengths.sv
+│   │   │   ├── accelerator_read_vectors.sv
+│   │   │   └── accelerator_read_weighting.sv
 │   │   ├── top
 │   │   │   ├── accelerator_interface_vector.sv
 │   │   │   ├── accelerator_output_vector.sv
@@ -217,10 +215,12 @@ code
 │   │   └── write_heads
 │   │       ├── accelerator_allocation_gate.sv
 │   │       ├── accelerator_erase_vector.sv
+│   │       ├── accelerator_write_content_weighting.sv
 │   │       ├── accelerator_write_gate.sv
 │   │       ├── accelerator_write_key.sv
 │   │       ├── accelerator_write_strength.sv
-│   │       └── accelerator_write_vector.sv
+│   │       ├── accelerator_write_vector.sv
+│   │       └── accelerator_write_weighting.sv
 │   ├── FNN
 │   │   ├── convolutional
 │   │   │   └── accelerator_controller.sv
