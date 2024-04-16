@@ -166,7 +166,7 @@ code
 │   │       ├── model_controller.vhd
 │   │       ├── model_decoder.vhd
 │   │       └── model_encoder.vhd
-│   ├── DNC
+│   ├── dnc
 │   │   ├── memory
 │   │   │   ├── model_addressing.vhd
 │   │   │   ├── model_allocation_weighting.vhd

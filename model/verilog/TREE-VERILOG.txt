@@ -166,7 +166,7 @@ code
 │   │       ├── model_controller.sv
 │   │       ├── model_decoder.sv
 │   │       └── model_encoder.sv
-│   ├── DNC
+│   ├── dnc
 │   │   ├── memory
 │   │   │   ├── model_addressing.sv
 │   │   │   ├── model_allocation_weighting.sv

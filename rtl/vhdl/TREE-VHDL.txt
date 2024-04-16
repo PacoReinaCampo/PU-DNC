@@ -187,7 +187,7 @@ code
 │   │       ├── accelerator_controller.vhd
 │   │       ├── accelerator_decoder.vhd
 │   │       └── accelerator_encoder.vhd
-│   ├── DNC
+│   ├── dnc
 │   │   ├── memory
 │   │   │   ├── accelerator_addressing.vhd
 │   │   │   ├── accelerator_allocation_weighting.vhd
