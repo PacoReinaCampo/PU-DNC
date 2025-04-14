@@ -1,4 +1,4 @@
-# PU-DNC (T-DNC/NTM-PU)
+# PU-DNC
 ## QueenField
 
 ![QueenField](../main/icon.jpg)
