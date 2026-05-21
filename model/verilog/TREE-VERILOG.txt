@@ -111,6 +111,77 @@ code
 │           ├── model_vector_integer_divider.sv
 │           ├── model_vector_integer_multiplier.sv
 │           └── model_vector_integer_subtractor.sv
+├── intelligence
+│   ├── nn
+│   │   ├── dnc
+│   │   │   ├── memory
+│   │   │   │   ├── model_addressing.sv
+│   │   │   │   ├── model_allocation_weighting.sv
+│   │   │   │   ├── model_backward_weighting.sv
+│   │   │   │   ├── model_content_based_addressing.sv
+│   │   │   │   ├── model_forward_weighting.sv
+│   │   │   │   ├── model_memory_matrix.sv
+│   │   │   │   ├── model_memory_retention_vector.sv
+│   │   │   │   ├── model_precedence_weighting.sv
+│   │   │   │   ├── model_sort_vector.sv
+│   │   │   │   ├── model_temporal_link_matrix.sv
+│   │   │   │   └── model_usage_vector.sv
+│   │   │   ├── read_heads
+│   │   │   │   ├── model_free_gates.sv
+│   │   │   │   ├── model_read_content_weighting.sv
+│   │   │   │   ├── model_read_keys.sv
+│   │   │   │   ├── model_read_modes.sv
+│   │   │   │   ├── model_read_strengths.sv
+│   │   │   │   ├── model_read_vectors.sv
+│   │   │   │   └── model_read_weighting.sv
+│   │   │   ├── top
+│   │   │   │   ├── model_interface_vector.sv
+│   │   │   │   ├── model_output_vector.sv
+│   │   │   │   └── model_top.sv
+│   │   │   └── write_heads
+│   │   │       ├── model_allocation_gate.sv
+│   │   │       ├── model_erase_vector.sv
+│   │   │       ├── model_write_content_weighting.sv
+│   │   │       ├── model_write_gate.sv
+│   │   │       ├── model_write_key.sv
+│   │   │       ├── model_write_strength.sv
+│   │   │       ├── model_write_vector.sv
+│   │   │       └── model_write_weighting.sv
+│   │   ├── fnn
+│   │   │   ├── convolutional
+│   │   │   │   └── model_controller.sv
+│   │   │   └── standard
+│   │   │       └── model_controller.sv
+│   │   └── lstm
+│   │       ├── convolutional
+│   │       │   ├── model_activation_gate_vector.sv
+│   │       │   ├── model_controller.sv
+│   │       │   ├── model_forget_gate_vector.sv
+│   │       │   ├── model_hidden_gate_vector.sv
+│   │       │   ├── model_input_gate_vector.sv
+│   │       │   ├── model_output_gate_vector.sv
+│   │       │   └── model_state_gate_vector.sv
+│   │       └── standard
+│   │           ├── model_activation_gate_vector.sv
+│   │           ├── model_controller.sv
+│   │           ├── model_forget_gate_vector.sv
+│   │           ├── model_hidden_gate_vector.sv
+│   │           ├── model_input_gate_vector.sv
+│   │           ├── model_output_gate_vector.sv
+│   │           └── model_state_gate_vector.sv
+│   └── trainer
+│       ├── differentiation
+│       │   ├── model_trainer_matrix_differentiation.sv
+│       │   └── model_trainer_vector_differentiation.sv
+│       ├── fnn
+│       │   └── model_trainer.sv
+│       ├── lstm
+│       │   ├── model_activation_trainer.sv
+│       │   ├── model_forget_trainer.sv
+│       │   ├── model_input_trainer.sv
+│       │   └── model_output_trainer.sv
+│       └── pnn
+│           └── model_trainer.sv
 ├── math
 │   ├── matrix
 │   │   ├── model_matrix_cosh_function.sv
@@ -136,84 +207,14 @@ code
 │       ├── model_vector_oneplus_function.sv
 │       ├── model_vector_sinh_function.sv
 │       └── model_vector_tanh_function.sv
-├── nn
-│   ├── dnc
-│   │   ├── memory
-│   │   │   ├── model_addressing.sv
-│   │   │   ├── model_allocation_weighting.sv
-│   │   │   ├── model_backward_weighting.sv
-│   │   │   ├── model_content_based_addressing.sv
-│   │   │   ├── model_forward_weighting.sv
-│   │   │   ├── model_memory_matrix.sv
-│   │   │   ├── model_memory_retention_vector.sv
-│   │   │   ├── model_precedence_weighting.sv
-│   │   │   ├── model_sort_vector.sv
-│   │   │   ├── model_temporal_link_matrix.sv
-│   │   │   └── model_usage_vector.sv
-│   │   ├── read_heads
-│   │   │   ├── model_free_gates.sv
-│   │   │   ├── model_read_content_weighting.sv
-│   │   │   ├── model_read_keys.sv
-│   │   │   ├── model_read_modes.sv
-│   │   │   ├── model_read_strengths.sv
-│   │   │   ├── model_read_vectors.sv
-│   │   │   └── model_read_weighting.sv
-│   │   ├── top
-│   │   │   ├── model_interface_vector.sv
-│   │   │   ├── model_output_vector.sv
-│   │   │   └── model_top.sv
-│   │   └── write_heads
-│   │       ├── model_allocation_gate.sv
-│   │       ├── model_erase_vector.sv
-│   │       ├── model_write_content_weighting.sv
-│   │       ├── model_write_gate.sv
-│   │       ├── model_write_key.sv
-│   │       ├── model_write_strength.sv
-│   │       ├── model_write_vector.sv
-│   │       └── model_write_weighting.sv
-│   ├── fnn
-│   │   ├── convolutional
-│   │   │   └── model_controller.sv
-│   │   └── standard
-│   │       └── model_controller.sv
-│   └── lstm
-│       ├── convolutional
-│       │   ├── model_activation_gate_vector.sv
-│       │   ├── model_controller.sv
-│       │   ├── model_forget_gate_vector.sv
-│       │   ├── model_hidden_gate_vector.sv
-│       │   ├── model_input_gate_vector.sv
-│       │   ├── model_output_gate_vector.sv
-│       │   └── model_state_gate_vector.sv
-│       └── standard
-│           ├── model_activation_gate_vector.sv
-│           ├── model_controller.sv
-│           ├── model_forget_gate_vector.sv
-│           ├── model_hidden_gate_vector.sv
-│           ├── model_input_gate_vector.sv
-│           ├── model_output_gate_vector.sv
-│           └── model_state_gate_vector.sv
-├── pkg
-│   ├── model_ann_controller_verilog_pkg.sv
-│   ├── model_arithmetic_verilog_pkg.sv
-│   ├── model_fnn_controller_verilog_pkg.sv
-│   ├── model_lstm_controller_verilog_pkg.sv
-│   ├── model_math_verilog_pkg.sv
-│   ├── model_ntm_core_verilog_pkg.sv
-│   ├── model_pnn_controller_verilog_pkg.sv
-│   └── model_state_verilog_pkg.sv
-└── trainer
-    ├── differentiation
-    │   ├── model_trainer_matrix_differentiation.sv
-    │   └── model_trainer_vector_differentiation.sv
-    ├── fnn
-    │   └── model_trainer.sv
-    ├── lstm
-    │   ├── model_activation_trainer.sv
-    │   ├── model_forget_trainer.sv
-    │   ├── model_input_trainer.sv
-    │   └── model_output_trainer.sv
-    └── pnn
-        └── model_trainer.sv
+└── pkg
+    ├── model_ann_controller_verilog_pkg.sv
+    ├── model_arithmetic_verilog_pkg.sv
+    ├── model_fnn_controller_verilog_pkg.sv
+    ├── model_lstm_controller_verilog_pkg.sv
+    ├── model_math_verilog_pkg.sv
+    ├── model_ntm_core_verilog_pkg.sv
+    ├── model_pnn_controller_verilog_pkg.sv
+    └── model_state_verilog_pkg.sv
 
-50 directories, 166 files
+51 directories, 166 files
