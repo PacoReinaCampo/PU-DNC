@@ -112,7 +112,7 @@ code
 │           ├── model_vector_integer_multiplier.sv
 │           └── model_vector_integer_subtractor.sv
 ├── intelligence
-│   ├── model
+│   ├── modeling
 │   │   ├── dnc
 │   │   │   ├── memory
 │   │   │   │   ├── model_addressing.sv
@@ -169,7 +169,7 @@ code
 │   │           ├── model_input_gate_vector.sv
 │   │           ├── model_output_gate_vector.sv
 │   │           └── model_state_gate_vector.sv
-│   └── trainer
+│   └── training
 │       ├── differentiation
 │       │   ├── model_trainer_matrix_differentiation.sv
 │       │   └── model_trainer_vector_differentiation.sv

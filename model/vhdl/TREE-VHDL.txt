@@ -112,7 +112,7 @@ code
 │           ├── model_vector_integer_multiplier.vhd
 │           └── model_vector_integer_subtractor.vhd
 ├── intelligence
-│   ├── model
+│   ├── modeling
 │   │   ├── dnc
 │   │   │   ├── memory
 │   │   │   │   ├── model_addressing.vhd
@@ -162,7 +162,7 @@ code
 │   │           ├── model_input_gate_vector.vhd
 │   │           ├── model_output_gate_vector.vhd
 │   │           └── model_state_gate_vector.vhd
-│   └── trainer
+│   └── training
 │       ├── differentiation
 │       │   ├── model_trainer_matrix_differentiation.vhd
 │       │   └── model_trainer_vector_differentiation.vhd
